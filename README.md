@@ -1,8 +1,6 @@
-# Arduino Grundlagen Workshop
+# Arduino Community
 
-Willkommen zum Seminar und Workshop. Wir lernen in 5 Tagen den Umgang und die Programmierung des Arduino Mikrokontrollers. Das Git Repository github.com/zenbox/arduino sammelt und beinhaltet die Codebeispiel aus der Workshop-Woche, Installationsanleitungen, Schaltbilder und Links.
-
-Das LED Lauflicht funktioniert! Ich habe die Codes ausführlich kommentiert. Viel Spaß beim weiterentwickeln! Das Skript zur SD Card ist noch work-in-progress.
+Willkommen zur Arduino Community. Das Git Repository github.com/zenbox/arduino-community sammelt und beinhaltet Codebeispiele aus den verschiedenen Workshop-Wochen, Installationsanleitungen, Schaltbilder und Links. Es wurde im Januar 2017 gegründet und lädt seither alle Teilnehmer der GFU Arduino Workshops zum Erfahrungsaustausch und zur Diskussion ein.
 
 ## Der Docs-Ordner
 Hier findest Du Skripte zur Progtammierung, zur Konfiguration und im Workshop gezeigte Folien. https://github.com/zenbox/arduino/tree/master/docs
