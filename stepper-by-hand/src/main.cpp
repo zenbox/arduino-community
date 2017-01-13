@@ -21,6 +21,8 @@
  *        to the arduino power and ground, for testing.
  *        Test some speed limitations. It depends on the
  *        used power supply, how fast a stepper can be driven.
+ *
+ * @link https://grahamwideman.wikispaces.com/Motors-+28BYJ-48+Stepper+motor+notes
  */
 const byte NUM_STEPPER_PINS = 4;
 int stepperPins[NUM_STEPPER_PINS] = {7,6,5,4};
