@@ -1,6 +1,6 @@
 # Arduino Community
 
-Willkommen zur Arduino Community. Das Git Repository github.com/zenbox/arduino-community sammelt und beinhaltet Codebeispiele aus den verschiedenen Workshop-Wochen, Installationsanleitungen, Schaltbilder und Links. Es wurde im Januar 2017 gegründet und lädt seither alle Teilnehmer der GFU Arduino Workshops zum Erfahrungsaustausch und zur Diskussion ein. lalla
+Willkommen zur Arduino Community. Das Git Repository github.com/zenbox/arduino-community sammelt und beinhaltet Codebeispiele aus den verschiedenen Workshop-Wochen, Installationsanleitungen, Schaltbilder und Links. Es wurde im Januar 2017 gegründet und lädt seither alle Teilnehmer der GFU Arduino Workshops zum Erfahrungsaustausch und zur Diskussion ein.
 
 ## Der Docs-Ordner
 Hier findest Du Skripte zur Progtammierung, zur Konfiguration und im Workshop gezeigte Folien. https://github.com/zenbox/arduino/tree/master/docs

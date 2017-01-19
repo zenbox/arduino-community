@@ -53,6 +53,9 @@ void setup() {
 	pinMode(PIN, OUTPUT);
 	digitalWrite(PIN, LOW);
 
+	pinMode(PIN, LOW);
+
+
 	/**
 	 * @desc init the stepper pins
 	 */
