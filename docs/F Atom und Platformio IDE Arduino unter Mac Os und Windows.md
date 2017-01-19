@@ -30,7 +30,7 @@ un-c-rustify ist der Codebeautifyer für `C/C++`. Er muss für Atom noch install
 
 ### Installation auf Mac OS
 
-1. Öffne das Terminal.
+1. Öffne das Terminal. (Dazu muss das CLI von Xcode installiert sein.)
 2. Führe im Terminal aus:  
 	`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null`  
 	und warte, bis der Befehl fertig gearbeitet hat.
@@ -54,7 +54,7 @@ un-c-rustify ist der Codebeautifyer für `C/C++`. Er muss für Atom noch install
 
 ## Die Atom Keymap ergänzen
 
-`crtl-alt-b` werden von den packages atom-beautify (beautifying) und PlatformIo (run code) verwendet. Für atom-beautify soll das erhalten bleiben, deshalb schalten wir key mapping für PlatformIo aus und weisen der in `keycaps.cson`  (`File -> Keymaps...`)die folgenden Einträge zu:
+`crtl-alt-b` werden von den packages atom-beautify (beautifying) und PlatformIo (run code) verwendet. Für atom-beautify soll das erhalten bleiben, deshalb schalten wir key mapping für PlatformIo aus und weisen der in `keycaps.cson`  (`File -> Keymap...`)die folgenden Einträge zu:
 
 **Unter Mac OS X**
 
