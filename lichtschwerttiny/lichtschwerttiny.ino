@@ -11,14 +11,14 @@
  * GND   -|   |- 0 (PWM)
  */
 
-int ledR = 9;
-int ledG = 11;
-int ledB = 10;
-int button = 12;
+int ledR = 2;
+int ledG = 3;
+int ledB = 4;
+int button = 5;
 int buttonstate = 0;
 int state = 1;
 int power = 0;
-int powerbutton = 3;
+int powerbutton = 6;
 int powerbuttonstate = 0;
 int active = 0;
 int zeit = 100;
@@ -35,7 +35,9 @@ void setup() {
 
 void loop() {
         buttonstate = digitalRead(button);
+        delay(20);
         powerbuttonstate = digitalRead(powerbutton);
+        delay(20);
         if (buttonstate == HIGH)
                 state = state + 1;
         delay(zeit);
