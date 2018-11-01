@@ -52,13 +52,50 @@ void setup()
 
   // Infrarot Empfaengerdiode
   irrecv.enableIRIn();
+
+  Serial.print("Sony: ");
+  Serial.print(SONY);
+  Serial.print(", NEC: ");
+  Serial.print(NEC);
+  Serial.print(", RC5: ");
+  Serial.print(RC5);
+  Serial.print(", RC6: ");
+  Serial.print(RC6);
+  Serial.print(", UNKNOWN: ");
+  Serial.print(UNKNOWN);
+  Serial.println();
+
 }
 
 void loop() {
 
   if (irrecv.decode(&results)) {
 
-    Serial.println(results.value, DEC);
+       if (results.decode_type == NEC) {
+      Serial.print("NEC: ");
+    } else if (results.decode_type == SONY) {
+      Serial.print("SONY: ");
+    } else if (results.decode_type == RC5) {
+      Serial.print("RC5: ");
+    } else if (results.decode_type == RC6) {
+      Serial.print("RC6: ");
+    } else if (results.decode_type == UNKNOWN) {
+      Serial.print("UNKNOWN: ");
+    }
+    Serial.print(results.value, HEX);
+
+    Serial.print(" (");
+    Serial.print(results.value, DEC);
+    Serial.print(")");
+    
+    Serial.print(", decode type: ");
+    Serial.print(results.decode_type);
+    Serial.print(", raw length: ");
+    Serial.print(results.rawlen);
+    Serial.print(", bits: ");
+    Serial.print(results.bits);
+    Serial.println();
+
 
     switch (results.value) {
       case REPEATER:        // 1
