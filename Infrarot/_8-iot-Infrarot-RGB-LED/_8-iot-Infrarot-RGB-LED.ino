@@ -34,24 +34,25 @@ void loop() {
     Serial.println(results.value, DEC);
 
     switch (results.value) {
-      case 2534850111:        // 1
-        ping(); digitalWrite(RED_PIN, HIGH);
+      case 518097015:        // 1
+        ping(); 
+        digitalWrite(RED_PIN, HIGH);
+        digitalWrite(GREEN_PIN, LOW);
+        digitalWrite(BLUE_PIN, LOW);
         break;
-      case 1033561079:        // 2
-        ping(); digitalWrite(RED_PIN, LOW);
+      case 518080695:        // 2
+        ping(); 
+        digitalWrite(RED_PIN, LOW);
+        digitalWrite(GREEN_PIN, HIGH);
+        digitalWrite(BLUE_PIN, LOW);
         break;
-      case 2351064443:        // 4
-        ping(); digitalWrite(GREEN_PIN, HIGH);
+      case 518113335:        // 3
+        ping(); 
+        digitalWrite(GREEN_PIN, LOW);
+        digitalWrite(GREEN_PIN, LOW);
+        digitalWrite(BLUE_PIN, HIGH);
         break;
-      case 1217346747:        // 5
-        ping(); digitalWrite(GREEN_PIN, LOW);
-        break;
-      case 851901943:        // 7
-        ping(); digitalWrite(BLUE_PIN, HIGH);
-        break;
-      case 465573243:        // 8
-        ping(); digitalWrite(BLUE_PIN, LOW);
-        break;
+
     }
    irrecv.resume(); // Receive the next value
   }
