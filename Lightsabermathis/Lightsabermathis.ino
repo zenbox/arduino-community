@@ -11,18 +11,18 @@
    GND   -|   |- 0 (PWM)
 */
 // for Tiny
-//int ledPin1 = 0;
-//int ledPin2 = 1;
-//int ledPin3 = 2;
-//int buttonPin = 3;
-//int powbuttonPin = 4;
+int ledPin1 = 0;
+int ledPin2 = 1;
+int ledPin3 = 2;
+int buttonPin = 3;
+int powbuttonPin = 4;
 
 // for UNO
-int ledPin1 = 2;
-int ledPin2 = 3;
-int ledPin3 = 4;
-int buttonPin = 5;
-int powbuttonPin = 6;
+//int ledPin1 = 2;
+//int ledPin2 = 3;
+//int ledPin3 = 4;
+//int buttonPin = 5;
+//int powbuttonPin = 6;
 
 int buttonState = 0;
 int state = 0;
@@ -30,12 +30,12 @@ int powbuttonState = 0;
 
 int power = 0;
 
-int delayZeit = 150;
+int delayZeit = 40;
 
 
 void setup() {
-  Serial.begin(9600);
-  Serial.println("started");
+  //Serial.begin(9600);
+  //Serial.println("started");
 
   pinMode(ledPin1, OUTPUT);
   pinMode(ledPin2, OUTPUT);
@@ -55,13 +55,13 @@ void loop() {
   if (buttonState == HIGH) {
     state = state + 1;
 
-    if (state > 2) {
+    if (state > 3) {
       state = 0;
     }
 
-    Serial.print("state is ");
-    Serial.print(state);
-    Serial.println();
+    //Serial.print("state is ");
+    //Serial.print(state);
+    //Serial.println();
   }
 
   // - - - - - - - - - -
@@ -73,9 +73,9 @@ void loop() {
       power = 0;
     }
 
-    Serial.print("power is ");
-    Serial.print(power);
-    Serial.println();
+    //Serial.print("power is ");
+    //Serial.print(power);
+    //Serial.println();
 
   }
 
@@ -106,6 +106,10 @@ void loop() {
         digitalWrite(ledPin2, LOW);
         digitalWrite(ledPin3, HIGH);
         break;
+        case 3:
+        digitalWrite(ledPin1, HIGH);
+        digitalWrite(ledPin2, LOW);
+        digitalWrite(ledPin3, HIGH);
     }
     delay(delayZeit);
 
