@@ -11,14 +11,14 @@
    GND   -|   |- 0 (PWM)
 */
 
-int ledR = 2;
-int ledG = 3;
-int ledB = 4;
-int button = 5;
+int ledR = 0;
+int ledG = 1;
+int ledB = 2;
+int button = 3;
 int buttonstate = 0;
 int state = 1;
 int power = 0;
-int powerbutton = 6;
+int powerbutton = 4;
 int powerbuttonstate = 0;
 int active = 0;
 int delayZeit = 200;
@@ -45,7 +45,7 @@ void loop() {
   if (buttonstate == HIGH) {
     state = state + 1;
 
-    if (state > 3) {
+    if (state > 4) {
       state = 1;
     }
     delay(delayZeit);
@@ -78,6 +78,7 @@ void loop() {
     analogWrite(ledR, LOW);
     analogWrite(ledG, LOW);
     analogWrite(ledB, LOW);
+    delay(delayZeit);
   } else {
     switch (state) {
       case 1:
@@ -94,6 +95,11 @@ void loop() {
         digitalWrite(ledR, LOW);
         digitalWrite(ledG, LOW);
         digitalWrite(ledB, HIGH);
+        break;
+      case 4:
+        analogWrite(ledR, 255);
+        analogWrite(ledG, 15);
+        digitalWrite(ledB, LOW);
         break;
     }
   }
