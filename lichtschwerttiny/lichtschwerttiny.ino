@@ -3,6 +3,12 @@
  * @version 1.0.0
  * @since 2018-11-01
  * @author Linus
+ * 
+ * AT Tiny:
+ * Reset -| U |- 5V
+ * A3, 3 -|   |- 2, A1
+ * A2, 4 -|   |- 1 (PWM)
+ * GND   -|   |- 0 (PWM)
  */
 int ledR = 9;
 int ledG = 11;
