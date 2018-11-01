@@ -27,6 +27,7 @@ int powbuttonPin = 6;
 int buttonState = 0;
 int state = 0;
 int powbuttonState = 0;
+
 int power = 0;
 
 int delayZeit = 150;
