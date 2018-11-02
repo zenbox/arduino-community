@@ -32,6 +32,7 @@ const int BLUE_PIN  = 6;
 int count = 0;
 
 IRrecv irrecv(RECV_PIN);
+IRsend irsend;
 
 decode_results results;
 void setup()
@@ -69,9 +70,17 @@ void setup()
 
 void loop() {
 
+//  for (int i = 0; i < 3; i++) {
+//    irsend.sendNEC(1024, 12);
+//    // Serial.print("sending ...");
+//    delay(40);
+//  }
+
   if (irrecv.decode(&results)) {
 
-       if (results.decode_type == NEC) {
+    //irsend.sendNEC(1024, 12);
+
+    if (results.decode_type == NEC) {
       Serial.print("NEC: ");
     } else if (results.decode_type == SONY) {
       Serial.print("SONY: ");
@@ -87,7 +96,7 @@ void loop() {
     Serial.print(" (");
     Serial.print(results.value, DEC);
     Serial.print(")");
-    
+
     Serial.print(", decode type: ");
     Serial.print(results.decode_type);
     Serial.print(", raw length: ");
