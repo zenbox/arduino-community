@@ -45,7 +45,7 @@ void loop() {
   if (buttonstate == HIGH) {
     state = state + 1;
 
-    if (state > 4) {
+    if (state > 5) {
       state = 1;
     }
     delay(delayZeit);
@@ -97,10 +97,14 @@ void loop() {
         digitalWrite(ledB, HIGH);
         break;
       case 4:
-        analogWrite(ledR, 255);
-        analogWrite(ledG, 15);
+        analogWrite(ledR, 230);
+        analogWrite(ledG, 20);
         digitalWrite(ledB, LOW);
         break;
+      case 5:
+        analogWrite(ledR, 200);
+        analogWrite(ledG, LOW);
+        analogWrite(ledB, 255);
     }
   }
 }
