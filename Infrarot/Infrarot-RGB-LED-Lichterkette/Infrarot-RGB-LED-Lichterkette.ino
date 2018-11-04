@@ -23,11 +23,11 @@ const int C3 = 16724430;
 const int C7 = 16714230;
 const int C16 = 16722390;
 
-const int RECV_PIN  = 11;
+const int RECV_PIN  = 6;
 const int STATE_PIN = 13;
-const int RED_PIN   = 3;
-const int GREEN_PIN = 5;
-const int BLUE_PIN  = 6;
+const int RED_PIN   = 9;
+const int GREEN_PIN = 10;
+const int BLUE_PIN  = 11;
 
 int count = 0;
 
