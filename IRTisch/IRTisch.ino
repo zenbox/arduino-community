@@ -1,6 +1,6 @@
 int sensor = 8; 
 int Led1 = 10;
-int led2 = 11;
+int Led2 = 11;
 int object = 0;
 
 void setup() {
