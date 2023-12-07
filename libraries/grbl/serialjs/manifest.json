@@ -1,0 +1,16 @@
+{
+  "name": "Serial Sample",
+  "version": "1.0",
+  "manifest_version": 2,
+  "minimum_chrome_version": "23",
+  "description": "Shows how to control an Arduino Uno using Chrome.",
+
+  "app": {
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    }
+  },
+
+  "permissions": ["serial"]
+}

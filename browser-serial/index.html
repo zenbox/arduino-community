@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Serial</title>
+    <meta
+      http-equiv="origin-trial"
+      content="AiM0rMslVx2jumsJjQ144QeZTScNmGVMYzBuXoaMQwCd7UHWbQH8Rg20adCN7XWaTMai4HvsUIyx3+blPPiupwEAAABreyJvcmlnaW4iOiJodHRwczovL3VuamF2YXNjcmlwdGVyLXdlYi1zZXJpYWwtZXhhbXBsZS5nbGl0Y2gubWU6NDQzIiwiZmVhdHVyZSI6IlNlcmlhbCIsImV4cGlyeSI6MTU5Njk3OTA1NX0="
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="repo-link">
+        <a href="https://github.com/UnJavaScripter/web-serial-example"
+          >GitHub Repo</a
+        >
+      </div>
+      <section class="elements">
+        <div class="element">
+          <h3>
+            Upload
+            <a
+              href="https://github.com/UnJavaScripter/web-serial-example/blob/master/web_serial_onboard_led.ino"
+              >the example code</a
+            >
+            to an Arduino
+          </h3>
+        </div>
+        <div class="element">
+          <h2>Connect to a serial port</h2>
+          <button id="connect-to-serial">Connect</button>
+        </div>
+        <div class="element">
+          <h2>Send a message</h2>
+          <button class="message-button" data-value="0" disabled="true">
+            Off
+          </button>
+          <button class="message-button" data-value="1" disabled="true">
+            On
+          </button>
+        </div>
+        <div class="element">
+          <h2>Get a message back:</h2>
+          <ol id="serial-messages-container"></ol>
+        </div>
+      </section>
+    </main>
+
+    <script src="./serial-handler.js" type="module"></script>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

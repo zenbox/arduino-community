@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <script>
+      if ("serial" in navigator) {
+        alert("WebSerial bereit!");
+      } else {
+        alert("WebSerial fehlt!");
+      }
+    </script>
+
+    <button onclick="searchDevices()">Search devices</button>
+    <script>
+      async function searchDevices() {
+        const port = await navigator.serial.requestPort();
+      }
+    </script>
+  </body>
+</html>
